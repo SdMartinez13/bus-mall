@@ -27,25 +27,25 @@ function Image(name, fileExtention = 'jpg'){
 
 }
 
-new Image('Sweep', 'png');
-new Image('Bag');
-new Image('Banana');
-new Image('Bathroom');
-new Image('Boots');
-new Image('Breakfast');
-new Image('Bubblegum');
-new Image('Chair');
-new Image('Cthulhu');
-new Image('Dog-duck');
-new Image('Dragon');
-new Image('Pen');
-new Image('Pet-sweep');
-new Image('Scissors');
-new Image('Shark');
-new Image('Tauntaun');
-new Image('Unicorn');
-new Image('Water-can');
-new Image('Wine-glass');
+new Image('sweep', 'png');
+new Image('bag');
+new Image('banana');
+new Image('bathroom');
+new Image('boots');
+new Image('breakfast');
+new Image('bubblegum');
+new Image('chair');
+new Image('cthulhu');
+new Image('dog-duck');
+new Image('dragon');
+new Image('pen');
+new Image('pet-sweep');
+new Image('scissors');
+new Image('shark');
+new Image('tauntaun');
+new Image('unicorn');
+new Image('water-can');
+new Image('wine-glass');
 
 //Helper Function
 
