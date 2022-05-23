@@ -1,0 +1,55 @@
+body {
+  background-color: lightslategrey;
+}
+
+h1 {
+  background-color: darkgrey;
+  height: 100px;
+  font-size: 100px;
+  font-family: cursive;
+  padding: 20px;
+  color: papayawhip;
+  
+}
+
+#img-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+}
+
+img {
+  border-radius: 75px;
+  border: 2px solid rgb(196, 191, 191);
+  width: 300px;
+  height: 300px;
+}
+
+main {
+  height: 800px;
+}
+
+#show-results-btn {
+  display: flex;
+  justify-content: space-between;
+  color: antiquewhite;
+  font-size: 25px;
+}
+
+#results-list {
+  list-style-type: square;
+  padding: 30px;
+  font-size: 20px;
+}
+
+footer{
+  height: 40px;
+  background-color: darkgrey;
+  color: papayawhip;
+  font-family: cursive;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  font-size: 25px;
+}
