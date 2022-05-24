@@ -2,7 +2,7 @@
 
 //Global Variables
 
-let voteCount = 5;
+let voteCount = 25;
 let allImgs = [];
 // let indexArray = [];
 
