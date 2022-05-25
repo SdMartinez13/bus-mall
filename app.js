@@ -33,26 +33,42 @@ function Image(name, fileExtention = 'jpg'){
 
 }
 
-new Image('sweep', 'png');
-new Image('bag');
-new Image('banana');
-new Image('bathroom');
-new Image('boots');
-new Image('breakfast');
-new Image('bubblegum');
-new Image('chair');
-new Image('cthulhu');
-new Image('dog-duck');
-new Image('dragon');
-new Image('pen');
-new Image('pet-sweep');
-new Image('scissors');
-new Image('shark');
-new Image('tauntaun');
-new Image('unicorn');
-new Image('water-can');
-new Image('wine-glass');
+// local storage part 2
 
+// Step 3 get it out of local storage
+
+let retrievedImgs = localStorage.getItem('images');
+
+//step 4 Parse data for our code to resuse
+
+let parsedImgs = JSON.parse(retrievedImgs);
+console.log('parsed >>>>', parsedImgs);
+
+if(retrievedImgs){
+  allImgs = parsedImgs;
+}else{
+
+  new Image('sweep', 'png');
+  new Image('bag');
+  new Image('banana');
+  new Image('bathroom');
+  new Image('boots');
+  new Image('breakfast');
+  new Image('bubblegum');
+  new Image('chair');
+  new Image('cthulhu');
+  new Image('dog-duck');
+  new Image('dragon');
+  new Image('pen');
+  new Image('pet-sweep');
+  new Image('scissors');
+  new Image('shark');
+  new Image('tauntaun');
+  new Image('unicorn');
+  new Image('water-can');
+  new Image('wine-glass');
+}
+console.log('RECONSTRUCTED IMAGES >>', allImgs);
 //Helper Function
 
 //w3resources and class demo - Math.floor(Math.random()*items.length)
@@ -203,6 +219,18 @@ function handleClick(event){
   }
 
 }
+
+//Step 1 Stringify Data
+
+let stringifiedImages = JSON.stringify(allImgs);
+
+console.log(stringifiedImages);
+
+//Step 2 Add to local storage
+
+localStorage.setItem('images', stringifiedImages);
+
+
 
 
 
